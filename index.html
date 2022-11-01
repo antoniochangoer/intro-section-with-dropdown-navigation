@@ -9,9 +9,9 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <header class="header">
-    <img src="./images/logo.svg" alt="Snap company logo" class="logo">
-    <nav class="nav container">
+  <header class="header container container-xlg">
+    <nav class="nav">
+      <img src="./images/logo.svg" alt="Snap company logo" class="logo">
       <ul class="nav__items">
         <li class="nav__item">
           Features
@@ -34,24 +34,29 @@
         <a href="#" class="nav__btn nav__btn--no-border">Login</a>
         <a href="#" class="nav__btn nav__btn--border">Register</a>
       </div>
+      <div class="nav__hamburger">
+        <img src="./images/icon-menu.svg" alt="hamburger menu">
+      </div>
     </nav>
   </header>
-  <main class="main container">
+  <main class="main container-lg">
     <section class="hero">
-      <div class="hero__content">
-        <h1 class="hero__title">Make remote work</h1>
-        <p class="hero__text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-        <button class="hero__cta">Learn more</button>
-      </div>
       <picture class="hero__img">
-        <source srcset="./images/image-hero-desktop.png" alt="" media="(min-width: 768px)">
+        <source srcset="./images/image-hero-desktop.png" alt="" media="(min-width: 750px)">
         <img src="./images/image-hero-mobile.png" alt="">
       </picture>
-      <div class="hero__client-logos">
-        <img src="./images/client-databiz.svg" alt="">
-        <img src="./images/client-audiophile.svg" alt="">
-        <img src="./images/client-meet.svg" alt="">
-        <img src="./images/client-maker.svg" alt="">
+      <div class="wrapper container">
+        <div class="hero__content">
+          <h1 class="hero__title">Make remote work</h1>
+          <p class="hero__text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+          <button class="hero__cta">Learn more</button>
+        </div>
+        <div class="hero__client-logos">
+          <img class="databiz" src="./images/client-databiz.svg" alt="">
+          <img class="audiophile" src="./images/client-audiophile.svg" alt="">
+          <img class="meet" src="./images/client-meet.svg" alt="">
+          <img class="maker" src="./images/client-maker.svg" alt="">
+        </div>
       </div>
     </section>
   </main>
