@@ -21,14 +21,8 @@
           Company
           <img src="./images/icon-arrow-down.svg" alt="">
         </li>
-        <li class="nav__item">
-          Careers
-          <img src="./images/icon-arrow-down.svg" alt="">
-        </li>
-        <li class="nav__item">
-          About
-          <img src="./images/icon-arrow-down.svg" alt="">
-        </li>
+        <li class="nav__item">Careers</li>
+        <li class="nav__item">About</li>
       </ul>
       <div class="nav__buttons">
         <a href="#" class="nav__btn nav__btn--no-border">Login</a>
@@ -36,6 +30,52 @@
       </div>
       <div class="nav__hamburger">
         <img src="./images/icon-menu.svg" alt="hamburger menu">
+        <div class="side-menu">
+          <img src="./images/icon-close-menu.svg" class="close" alt="">
+          <ul class="side-menu__items">
+            <li class="side-menu__item">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </li>
+            <!-- Features dropdown menu hidden -->
+            <ul class="features-dropdown__items">
+              <li class="features-dropdown__item">
+                <img src="./images/icon-todo.svg" alt="">
+                Todo list
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-calendar.svg" alt="">
+                Calendar
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-reminders.svg" alt="">
+                Reminders
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-planning.svg" alt="">
+                Planning
+              </li>
+            </ul>
+            <!-- End Features dropdown list -->
+            <li class="side-menu__item">
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </li>
+            <!-- Start Company dropdown -->
+            <ul class="company-dropdown__items">
+              <li class="company-dropdown__item">History</li>
+              <li class="company-dropdown__item">Our Team</li>
+              <li class="company-dropdown__item">Blog</li>
+            </ul>
+            <!-- End Company dropdown -->
+            <li class="side-menu__item">Careers</li>
+            <li class="side-menu__item">About</li>
+          </ul>
+          <div class="side-menu__buttons">
+            <a href="#" class="side-menu__btn side-menu__btn--no-border">Login</a>
+            <a href="#" class="side-menu__btn side-menu__btn--border">Register</a>
+          </div>
+        </div>
       </div>
     </nav>
   </header>
