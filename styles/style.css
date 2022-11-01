@@ -44,6 +44,9 @@
     font-size: var(--fs-body-sm);
     font-weight: var(--fw-m);
     line-height: 1.5;
+
+    /* test */
+    overflow-x: hidden;
 }
 
   img, picture, video, canvas, svg {
@@ -80,7 +83,6 @@
 
 .logo {
   cursor: pointer;
-  /* to center it with hamburger */
   padding-top: 5px;
 }
 
@@ -90,22 +92,40 @@
   justify-content: space-between;
 }
 
+.backdrop {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
 .nav__hamburger {
   cursor: pointer;
 }
 
-  /* Side menu */
 .side-menu {
   position: absolute;
   top: 0;
   right: 0;
   background-color: var(--almost-white);
+  color: var(--medium-grey);
   min-height: 100%;
   width: 24rem;
   padding: 2.2rem;
+  transition: all .3s ease-in;
+  transform: translateX(100%);
+  z-index: 99;
 }
 
+  .show-menu {
+    transform: translateX(0);
+}
+
+
   .close {
+    cursor: pointer;
     margin-left: auto;
   }
 
@@ -177,7 +197,6 @@
   .company-dropdown__items {
     
   }
-
 
 .main {
 
