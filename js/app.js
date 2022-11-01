@@ -12,3 +12,8 @@ closeMenu.addEventListener('click', () => {
     sideMenu.classList.remove('show-menu');
     backDrop.classList.remove('backdrop');
 });
+
+backDrop.addEventListener('click', () => {
+    sideMenu.classList.remove('show-menu');
+    backDrop.classList.remove('backdrop');
+});
