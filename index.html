@@ -10,124 +10,126 @@
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <header class="header container container-xlg">
-    <nav class="nav">
-      <img src="./images/logo.svg" alt="Snap company logo" class="logo">
-      <ul class="nav__items">
-        <li class="nav__item nav-features-toggle">
-          Features
-          <img src="./images/icon-arrow-down.svg" alt="">
-        </li>
-        <!-- Desktop navigation dropdown features -->
-        <ul class="features nav-features__dropdown__items nav-features-dropdown">
-          <li class="nav-features__dropdown__item">
-            <img src="./images/icon-todo.svg" alt="">
-            Todo list
-          </li>
-          <li class="nav-features__dropdown__item">
-            <img src="./images/icon-calendar.svg" alt="">
-            Calendar
-          </li>
-          <li class="nav-features__dropdown__item">
-            <img src="./images/icon-reminders.svg" alt="">
-            Reminders
-          </li>
-          <li class="nav-features__dropdown__item">
-            <img src="./images/icon-planning.svg" alt="">
-            Planning
-          </li>
-        </ul>
-        <!-- End of dropdown -->
-        <li class="nav__item nav-company-toggle">
-          Company
-          <img src="./images/icon-arrow-down.svg" alt="">
-        </li>
-        <!-- Desktop Start Company dropdown hidden -->
-        <ul id="company-dropdown" class="company nav-company__dropdown__items nav-company-dropdown">
-          <li class="nav-company__dropdown__item">History</li>
-          <li class="nav-company__dropdown__item">Our Team</li>
-          <li class="nav-company__dropdown__item">Blog</li>
-        </ul>
-        <!-- End Company dropdown -->
-        <li class="nav__item">Careers</li>
-        <li class="nav__item">About</li>
-      </ul>
-      <div class="nav__buttons">
-        <a href="#" class="nav__btn nav__btn--no-border">Login</a>
-        <a href="#" class="nav__btn nav__btn--border">Register</a>
-      </div>
-      <div id="backdrop"></div>
-      <div class="nav__hamburger">
-        <img src="./images/icon-menu.svg" alt="hamburger menu">
-      </div>
-      <div class="side-menu">
-        <img src="./images/icon-close-menu.svg" class="close" alt="">
-        <ul class="side-menu__items">
-          <li class="side-menu__item features-toggle">
+  <div class="overflow-h">
+    <header class="header container container-xlg">
+      <nav class="nav">
+        <img src="./images/logo.svg" alt="Snap company logo" class="logo">
+        <ul class="nav__items">
+          <li class="nav__item nav-features-toggle">
             Features
             <img src="./images/icon-arrow-down.svg" alt="">
           </li>
-          <!-- Features dropdown side-menu hidden -->
-          <ul class="features-dropdown__items dropdown">
-            <li class="features-dropdown__item">
+          <!-- Desktop navigation dropdown features -->
+          <ul class="features nav-features__dropdown__items nav-features-dropdown">
+            <li class="nav-features__dropdown__item">
               <img src="./images/icon-todo.svg" alt="">
               Todo list
             </li>
-            <li class="features-dropdown__item">
+            <li class="nav-features__dropdown__item">
               <img src="./images/icon-calendar.svg" alt="">
               Calendar
             </li>
-            <li class="features-dropdown__item">
+            <li class="nav-features__dropdown__item">
               <img src="./images/icon-reminders.svg" alt="">
               Reminders
             </li>
-            <li class="features-dropdown__item">
+            <li class="nav-features__dropdown__item">
               <img src="./images/icon-planning.svg" alt="">
               Planning
             </li>
           </ul>
-          <!-- End Features dropdown list -->
-          <li class="side-menu__item company-toggle">
+          <!-- End of dropdown -->
+          <li class="nav__item nav-company-toggle">
             Company
             <img src="./images/icon-arrow-down.svg" alt="">
           </li>
-          <!-- Start Company dropdown side-menu hidden -->
-          <ul class="company-dropdown__items dropdown">
-            <li class="company-dropdown__item">History</li>
-            <li class="company-dropdown__item">Our Team</li>
-            <li class="company-dropdown__item">Blog</li>
+          <!-- Desktop Start Company dropdown hidden -->
+          <ul id="company-dropdown" class="company nav-company__dropdown__items nav-company-dropdown">
+            <li class="nav-company__dropdown__item">History</li>
+            <li class="nav-company__dropdown__item">Our Team</li>
+            <li class="nav-company__dropdown__item">Blog</li>
           </ul>
           <!-- End Company dropdown -->
-          <li class="side-menu__item">Careers</li>
-          <li class="side-menu__item">About</li>
+          <li class="nav__item">Careers</li>
+          <li class="nav__item">About</li>
         </ul>
-        <div class="side-menu__buttons">
-          <a href="#" class="side-menu__btn side-menu__btn--no-border">Login</a>
-          <a href="#" class="side-menu__btn side-menu__btn--border">Register</a>
+        <div class="nav__buttons">
+          <a href="#" class="nav__btn nav__btn--no-border">Login</a>
+          <a href="#" class="nav__btn nav__btn--border">Register</a>
         </div>
-      </div>
-    </nav>
-  </header>
-  <main class="main container-lg">
-    <section class="hero">
-      <picture class="hero__img">
-        <source srcset="./images/image-hero-desktop.png" alt="" media="(min-width: 750px)">
-        <img src="./images/image-hero-mobile.png" alt="">
-      </picture>
-      <div class="wrapper container">
-        <div class="hero__content">
-          <h1 class="hero__title">Make remote work</h1>
-          <p class="hero__text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
-          <button class="hero__cta">Learn more</button>
+        <div id="backdrop"></div>
+        <div class="nav__hamburger">
+          <img src="./images/icon-menu.svg" alt="hamburger menu">
         </div>
-        <div class="hero__client-logos">
-          <img class="databiz" src="./images/client-databiz.svg" alt="">
-          <img class="audiophile" src="./images/client-audiophile.svg" alt="">
-          <img class="meet" src="./images/client-meet.svg" alt="">
-          <img class="maker" src="./images/client-maker.svg" alt="">
+        <div class="side-menu">
+          <img src="./images/icon-close-menu.svg" class="close" alt="">
+          <ul class="side-menu__items">
+            <li class="side-menu__item features-toggle">
+              Features
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </li>
+            <!-- Features dropdown side-menu hidden -->
+            <ul class="features-dropdown__items dropdown">
+              <li class="features-dropdown__item">
+                <img src="./images/icon-todo.svg" alt="">
+                Todo list
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-calendar.svg" alt="">
+                Calendar
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-reminders.svg" alt="">
+                Reminders
+              </li>
+              <li class="features-dropdown__item">
+                <img src="./images/icon-planning.svg" alt="">
+                Planning
+              </li>
+            </ul>
+            <!-- End Features dropdown list -->
+            <li class="side-menu__item company-toggle">
+              Company
+              <img src="./images/icon-arrow-down.svg" alt="">
+            </li>
+            <!-- Start Company dropdown side-menu hidden -->
+            <ul class="company-dropdown__items dropdown">
+              <li class="company-dropdown__item">History</li>
+              <li class="company-dropdown__item">Our Team</li>
+              <li class="company-dropdown__item">Blog</li>
+            </ul>
+            <!-- End Company dropdown -->
+            <li class="side-menu__item">Careers</li>
+            <li class="side-menu__item">About</li>
+          </ul>
+          <div class="side-menu__buttons">
+            <a href="#" class="side-menu__btn side-menu__btn--no-border">Login</a>
+            <a href="#" class="side-menu__btn side-menu__btn--border">Register</a>
+          </div>
         </div>
-      </div>
-    </section>
-  </main>
+      </nav>
+    </header>
+    <main class="main container-lg">
+      <section class="hero">
+        <picture class="hero__img">
+          <source srcset="./images/image-hero-desktop.png" alt="" media="(min-width: 750px)">
+          <img src="./images/image-hero-mobile.png" alt="">
+        </picture>
+        <div class="wrapper container">
+          <div class="hero__content">
+            <h1 class="hero__title">Make remote work</h1>
+            <p class="hero__text">Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch productivity soar.</p>
+            <button class="hero__cta">Learn more</button>
+          </div>
+          <div class="hero__client-logos">
+            <img class="databiz" src="./images/client-databiz.svg" alt="">
+            <img class="audiophile" src="./images/client-audiophile.svg" alt="">
+            <img class="meet" src="./images/client-meet.svg" alt="">
+            <img class="maker" src="./images/client-maker.svg" alt="">
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
