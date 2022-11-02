@@ -44,8 +44,6 @@
     font-size: var(--fs-body-sm);
     font-weight: var(--fw-m);
     line-height: 1.5;
-
-    /* test */
     overflow-x: hidden;
 }
 
@@ -64,16 +62,7 @@
 
 .container {
   max-width: 90%;
-  /* max-width: 34.4rem; */
-  /* margin-inline: auto; */
   margin: 1.6rem;
-}
-
-.header {
-  /* USeless??? */
-  /* display: flex;
-  align-items: center;
-  justify-content: space-between; */
 }
 
 .nav__items,
@@ -207,18 +196,6 @@
     padding: .8rem 0 2.4rem 2.4rem;
     color: var(--medium-grey);
   }
-  
-  .company-dropdown__items {
-    
-  }
-
-.main {
-
-}
-
-.hero {
-
-}
 
 .hero__img {
   margin-top: 2.4rem;
@@ -262,10 +239,6 @@
   padding-bottom: 4.8rem;
 }
 
-.hero__client-logos img:not(:last-child) {
-  /* margin-right: 2.8rem; */
-}
-
 /* Client logos fixed height and width on mobile */
 .databiz {
   max-width: 8.125rem;
@@ -286,7 +259,6 @@
   max-width: 5.89rem;
   max-height: 1.7rem;
 }
-
 
 /* TABLET - DESKTOP */
 @media (min-width: 750px) {
@@ -480,6 +452,20 @@
   }
 }
 
+@media (min-width: 750px) and (max-width: 1120px) { 
+  .nav__buttons {
+    gap: 1rem;
+  }
+  
+  .hero {
+    gap: 3rem;
+    padding: 2rem;
+  }
+
+  .hero__client-logos {
+    flex-wrap: wrap;
+  }
+}
 
 
 
