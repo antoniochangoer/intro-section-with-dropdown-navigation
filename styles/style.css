@@ -178,6 +178,20 @@
     color: var(--medium-grey);
   }
 
+  .dropdown {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .2s ease-in;
+    transform: translateY(-15%);
+  }
+
+  .dropdown-show {
+    position: static;
+    visibility: initial;
+    transform: translateY(0);
+  }
+
   .features-dropdown__item {
     display: flex;
     align-items: center;
