@@ -95,6 +95,10 @@
   bottom: 0;
 }
 
+.arrow-open {
+  transform: rotate(180deg);
+}
+
 .nav__hamburger {
   cursor: pointer;
 }

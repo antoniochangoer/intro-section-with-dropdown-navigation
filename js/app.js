@@ -24,21 +24,29 @@ backDrop.addEventListener('click', () => {
 
 featuresMenuToggle.addEventListener('click', (e) => {
     const dropdownFeatures = document.querySelector('.features-dropdown__items');
+    const arrow = featuresMenuToggle.firstChild.nextSibling;
+    arrow.classList.toggle('arrow-open')
     dropdownFeatures.classList.toggle('dropdown-show');
 });
 
 companyMenuToggle.addEventListener('click', (e) => {
     const dropdownCompany = document.querySelector('.company-dropdown__items');
+    const arrow = companyMenuToggle.firstChild.nextSibling;
+    arrow.classList.toggle('arrow-open')
     dropdownCompany.classList.toggle('dropdown-show');
 });
 
 // Desktop Navigation
 navfeaturesMenuToggle.addEventListener('click', (e) => {
     const dropdownFeatures = document.querySelector('.features');
+    const arrow = navfeaturesMenuToggle.firstChild.nextSibling;
+    arrow.classList.toggle('arrow-open')
     dropdownFeatures.classList.toggle('nav-features-dropdown-show');
 });
 
 navcompanyMenuToggle.addEventListener('click', (e) => {
     const dropdownCompany = document.querySelector('.company');
+    const arrow = navcompanyMenuToggle.firstChild.nextSibling;
+    arrow.classList.toggle('arrow-open')
     dropdownCompany.classList.toggle('nav-company-dropdown-show');
 });
