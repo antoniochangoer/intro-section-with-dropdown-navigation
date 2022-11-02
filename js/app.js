@@ -40,6 +40,5 @@ navfeaturesMenuToggle.addEventListener('click', (e) => {
 
 navcompanyMenuToggle.addEventListener('click', (e) => {
     const dropdownCompany = document.querySelector('.company');
-    console.log(dropdownCompany)
     dropdownCompany.classList.toggle('nav-company-dropdown-show');
 });
