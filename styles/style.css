@@ -121,7 +121,6 @@
     transform: translateX(0);
 }
 
-
   .close {
     cursor: pointer;
     margin-left: auto;
@@ -269,11 +268,7 @@
   max-height: 1.7rem;
 }
 
-/* TABLET - DESKTOP */
 @media (min-width: 750px) {
-  .main {
-    
-  }
   .container,
   .container-lg {
     max-width: 111rem;
@@ -393,7 +388,6 @@
   }
 
   /* Company nav desktop */
-
   .nav-company__dropdown__items {
     background-color: #fff;
     position: absolute;
@@ -475,29 +469,3 @@
     flex-wrap: wrap;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ALT TAGS TOEVOEGEN!!!! */
-
