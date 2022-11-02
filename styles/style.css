@@ -289,7 +289,6 @@
 
 
 /* TABLET - DESKTOP */
-
 @media (min-width: 750px) {
   .main {
     
@@ -366,6 +365,78 @@
   .nav__btn--border:hover {
     border: 1.5px solid var(--black);
   }
+
+  /* Nav dropdown styling features and company */
+  .nav-features-toggle,
+  .nav-company-toggle {
+    position: relative;
+  }
+
+  /* Features nav Desktop */
+ .nav-features__dropdown__items {
+    background-color: #fff;
+    position: absolute;
+    top: 8rem;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1.6rem;
+    padding: 2.4rem;
+    color: var(--medium-grey);
+    box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 14%);
+  }
+
+  .nav-features__dropdown__item {
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+    color: var(--medium-grey);
+  }
+
+  .nav-features-dropdown {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .2s ease-in;
+  }
+
+  .nav-features-dropdown-show {
+    visibility: initial;
+    transform: translate(-50%, 0%);
+  }
+
+  /* Company nav desktop */
+
+  .nav-company__dropdown__items {
+    background-color: #fff;
+    position: absolute;
+    top: 8rem;
+    transform: translate(90%,-50%);
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 1.6rem;
+    padding: 2.4rem;
+    color: var(--medium-grey);
+    box-shadow: 0px 10px 40px 0px rgb(0 0 0 / 14%);
+  }
+
+  .nav-company-dropdown {
+    position: absolute;
+    visibility: hidden;
+    pointer-events: none;
+    transition: transform .2s ease-in;
+  }
+
+  .nav-company-dropdown-show {
+    visibility: initial;
+    transform: translate(90%, 0%);
+  }
+
+/* End of dropdowns styling */
 
   .hero {
     display: flex;

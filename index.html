@@ -14,14 +14,41 @@
     <nav class="nav">
       <img src="./images/logo.svg" alt="Snap company logo" class="logo">
       <ul class="nav__items">
-        <li class="nav__item">
+        <li class="nav__item nav-features-toggle">
           Features
           <img src="./images/icon-arrow-down.svg" alt="">
         </li>
-        <li class="nav__item">
+        <!-- Desktop navigation dropdown features -->
+        <ul class="features nav-features__dropdown__items nav-features-dropdown">
+          <li class="nav-features__dropdown__item">
+            <img src="./images/icon-todo.svg" alt="">
+            Todo list
+          </li>
+          <li class="nav-features__dropdown__item">
+            <img src="./images/icon-calendar.svg" alt="">
+            Calendar
+          </li>
+          <li class="nav-features__dropdown__item">
+            <img src="./images/icon-reminders.svg" alt="">
+            Reminders
+          </li>
+          <li class="nav-features__dropdown__item">
+            <img src="./images/icon-planning.svg" alt="">
+            Planning
+          </li>
+        </ul>
+        <!-- End of dropdown -->
+        <li class="nav__item nav-company-toggle">
           Company
           <img src="./images/icon-arrow-down.svg" alt="">
         </li>
+        <!-- Desktop Start Company dropdown hidden -->
+        <ul id="company-dropdown" class="company nav-company__dropdown__items nav-company-dropdown">
+          <li class="nav-company__dropdown__item">History</li>
+          <li class="nav-company__dropdown__item">Our Team</li>
+          <li class="nav-company__dropdown__item">Blog</li>
+        </ul>
+        <!-- End Company dropdown -->
         <li class="nav__item">Careers</li>
         <li class="nav__item">About</li>
       </ul>
@@ -40,7 +67,7 @@
             Features
             <img src="./images/icon-arrow-down.svg" alt="">
           </li>
-          <!-- Features dropdown menu hidden -->
+          <!-- Features dropdown side-menu hidden -->
           <ul class="features-dropdown__items dropdown">
             <li class="features-dropdown__item">
               <img src="./images/icon-todo.svg" alt="">
@@ -64,7 +91,7 @@
             Company
             <img src="./images/icon-arrow-down.svg" alt="">
           </li>
-          <!-- Start Company dropdown -->
+          <!-- Start Company dropdown side-menu hidden -->
           <ul class="company-dropdown__items dropdown">
             <li class="company-dropdown__item">History</li>
             <li class="company-dropdown__item">Our Team</li>

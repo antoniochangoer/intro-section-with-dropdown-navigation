@@ -4,6 +4,8 @@ const sideMenu = document.querySelector('.side-menu');
 const backDrop = document.querySelector('#backdrop');
 const featuresMenuToggle = document.querySelector('.features-toggle');
 const companyMenuToggle = document.querySelector('.company-toggle');
+const navfeaturesMenuToggle = document.querySelector('.nav-features-toggle');
+const navcompanyMenuToggle = document.querySelector('.nav-company-toggle');
 
 openMenu.addEventListener('click', () => {
     sideMenu.classList.add('show-menu');
@@ -28,4 +30,16 @@ featuresMenuToggle.addEventListener('click', (e) => {
 companyMenuToggle.addEventListener('click', (e) => {
     const dropdownCompany = document.querySelector('.company-dropdown__items');
     dropdownCompany.classList.toggle('dropdown-show');
+});
+
+// Desktop Navigation
+navfeaturesMenuToggle.addEventListener('click', (e) => {
+    const dropdownFeatures = document.querySelector('.features');
+    dropdownFeatures.classList.toggle('nav-features-dropdown-show');
+});
+
+navcompanyMenuToggle.addEventListener('click', (e) => {
+    const dropdownCompany = document.querySelector('.company');
+    console.log(dropdownCompany)
+    dropdownCompany.classList.toggle('nav-company-dropdown-show');
 });
