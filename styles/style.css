@@ -336,6 +336,10 @@
     cursor: pointer;
   }
 
+  .nav__item:hover {
+    color: var(--black);
+  }
+
   .nav__buttons {
     margin-left: auto;
     display: flex;
