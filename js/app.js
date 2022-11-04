@@ -7,20 +7,21 @@ const companyMenuToggle = document.querySelector('.company-toggle');
 const navfeaturesMenuToggle = document.querySelector('.nav-features-toggle');
 const navcompanyMenuToggle = document.querySelector('.nav-company-toggle');
 
-openMenu.addEventListener('click', () => {
+const menuOpen = () => {
     sideMenu.classList.add('show-menu');
     backDrop.classList.add('backdrop');
-});
+}
 
-closeMenu.addEventListener('click', () => {
+const menuClose = () => {
     sideMenu.classList.remove('show-menu');
     backDrop.classList.remove('backdrop');
-});
+}
 
-backDrop.addEventListener('click', () => {
-    sideMenu.classList.remove('show-menu');
-    backDrop.classList.remove('backdrop');
-});
+openMenu.addEventListener('click', menuOpen);
+
+closeMenu.addEventListener('click', menuClose);
+
+backDrop.addEventListener('click', menuClose);
 
 featuresMenuToggle.addEventListener('click', (e) => {
     const dropdownFeatures = document.querySelector('.features-dropdown__items');
